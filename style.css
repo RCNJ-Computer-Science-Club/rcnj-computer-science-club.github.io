@@ -13,8 +13,7 @@
 .section-cont:nth-child(5) div section, 
 .section-cont:nth-child(6) div section,
 .section-cont:nth-child(7) div section,
-.section-cont:nth-child(8) div section,
-.section-cont:nth-child(9) div section
+.section-cont:nth-child(8) div section
 {
    min-height: 100dvh;
 }
