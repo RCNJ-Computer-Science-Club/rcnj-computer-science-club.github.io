@@ -1,5 +1,5 @@
 // Create the script element
-var darkReaderScript = document.createElement('script');
+let darkReaderScript = document.createElement('script');
 darkReaderScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/darkreader/4.9.58/darkreader.js';
 darkReaderScript.integrity = 'sha512-SVegqt9Q4E2cRDZ5alp9NLqLLJEAh6Ske9I/iU37Jiq0fHSFbkIsIbaIGYPcadf1JBLzdxPrkqfH1cpTuBQJvw==';
 darkReaderScript.crossOrigin = 'anonymous';
@@ -7,6 +7,14 @@ darkReaderScript.referrerPolicy = 'no-referrer';
 
 // Append the script element to the head section
 document.head.appendChild(darkReaderScript);
+
+
+
+function loadGIF(){
+  let element = document.evaluate('/html/body/div[2]/div[2]/div/section', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+  element.style.backgroundImage = 'url("' + 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDZkZmYzOGNhNDE3NDE4M2RiNTQxMmUxMTM5YWZhYjVmZjdjMzA4NyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xT9IgzoKnwFNmISR8I/giphy.gif' + '")';
+}
+
 
 
 // Code to be executed every second
@@ -21,7 +29,8 @@ function runEverySecond() {
 }
 
 // Start the interval timer
-var interval = setInterval(runEverySecond, 1);
+loadGIF();
+let interval = setInterval(runEverySecond, 1);
 
 // this is a update
 
