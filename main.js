@@ -21,8 +21,7 @@ if (DarkReader.isEnabled()) {
 }
 
 // Start the interval timer
-var interval = setInterval(runEverySecond, 1);
-
+// var interval = setInterval(runEverySecond, 1);
 
 // this is a update
 
