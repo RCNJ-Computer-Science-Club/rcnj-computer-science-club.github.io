@@ -6,7 +6,7 @@ darkReaderScript.crossOrigin = 'anonymous';
 darkReaderScript.referrerPolicy = 'no-referrer';
 
 darkReaderScript.onload = function (e) {
-  // DarkReader.setFetchMethod(window.fetch);
+  DarkReader.setFetchMethod(window.fetch);
   DarkReader.enable();
 }
 
