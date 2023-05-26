@@ -22,12 +22,22 @@
         display: flex;
        align-items: center;
     }
+
+
+   .section-cont:last-child {
+      height: auto;
+   }
+
 }
 
 
 #googlemaps {
     filter: invert(90%) hue-rotate(180deg)
 }
+
+
+
+
 
 
 
