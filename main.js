@@ -14,9 +14,9 @@ function runEverySecond() {
   // Your code here
   DarkReader.enable();
 
-if (DarkReader.isEnabled()) {
-    clearInterval(interval); // Stop the interval timer
-}
+  if (DarkReader.isEnabled()) {
+      clearInterval(interval); // Stop the interval timer
+  }
     
 }
 

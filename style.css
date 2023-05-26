@@ -2,7 +2,6 @@
     scroll-snap-type: y mandatory;
 }
 
-
-section-cont {
+.section-cont {
     scroll-snap-align: start;
 }
