@@ -8,13 +8,15 @@ darkReaderScript.referrerPolicy = 'no-referrer';
 // Append the script element to the head section
 document.head.appendChild(darkReaderScript);
 
+// /html/body/div[2]/div/section
 
+
+// document.querySelector("#home")
 
 function loadGIF(){
-  let element = document.evaluate('/html/body/div[2]/div[2]/div/section', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+  let element = document.getElementById("home")
   element.style.backgroundImage = 'url("' + 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDZkZmYzOGNhNDE3NDE4M2RiNTQxMmUxMTM5YWZhYjVmZjdjMzA4NyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xT9IgzoKnwFNmISR8I/giphy.gif' + '")';
 }
-
 
 
 // Code to be executed every second
