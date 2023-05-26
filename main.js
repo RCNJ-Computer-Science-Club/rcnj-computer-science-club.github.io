@@ -9,7 +9,7 @@ document.head.insertBefore(darkReaderScript, document.head.firstChild);
 
 function loadGIF(){
   let element = document.getElementById("home")
-  element.style.backgroundImage = 'url("' + 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDZkZmYzOGNhNDE3NDE4M2RiNTQxMmUxMTM5YWZhYjVmZjdjMzA4NyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xT9IgzoKnwFNmISR8I/giphy.gif' + '")';
+  element.style.backgroundImage = 'url("' + 'https://rcnj-computer-science-club.github.io/res/output.gif' + '")';
   // element.style.opacity = 0.2;
 }
 
