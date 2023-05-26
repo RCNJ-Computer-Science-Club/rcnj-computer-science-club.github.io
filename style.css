@@ -13,12 +13,20 @@
 .section-cont:last-child div section {
    height: auto;
 }
+.section-cont {
+/*    height: 100dvh; */
+}
 
 @media only screen and (max-width: 767px) {
     #home {
        align-items: center;
     }
 }
+
+#googlemaps {
+    filter: invert(90%) hue-rotate(180deg)
+}
+
 
 
 
