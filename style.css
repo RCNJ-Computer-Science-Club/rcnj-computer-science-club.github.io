@@ -6,28 +6,20 @@
     scroll-snap-align: start;
 }
 
-.section-cont div section {
+.section-cont:nth-child(1) div section,
+.section-cont:nth-child(2) div section,
+.section-cont:nth-child(3) div section,
+.section-cont:nth-child(4) div section,
+.section-cont:nth-child(5) div section {
    height: 100dvh;
 }
 
-.section-cont:last-child div section {
-   height: auto;
-}
-.section-cont {
-/*    height: 100dvh; */
-}
 
 @media only screen and (max-width: 767px) {
     #home {
-        display: flex;
+       display: flex;
        align-items: center;
     }
-
-
-   .section-cont:last-child {
-      height: auto;
-   }
-
 }
 
 

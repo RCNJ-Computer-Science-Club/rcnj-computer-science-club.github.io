@@ -9,8 +9,8 @@ document.head.insertBefore(darkReaderScript, document.head.firstChild);
 
 function loadGIF(){
   let element = document.getElementById("home")
-  element.style.backgroundImage = 'url("' + 'https://rcnj-computer-science-club.github.io/res/output.gif' + '")';
-  // element.style.opacity = 0.2;
+  // element.style.backgroundImage = 'url("' + 'https://rcnj-computer-science-club.github.io/res/output.gif' + '")';
+  element.style.backgroundImage = '/res/output.gif';
 }
 
 loadGIF();
