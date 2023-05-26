@@ -6,8 +6,8 @@ darkReaderScript.crossOrigin = 'anonymous';
 darkReaderScript.referrerPolicy = 'no-referrer';
 
 darkReaderScript.onload = function (e) {
-  DarkReader.setFetchMethod(window.fetch);
-  DarkReader.enable();
+  // DarkReader.setFetchMethod(window.fetch);
+  // DarkReader.enable();
 }
 
 // Append the script element to the head section
@@ -43,3 +43,4 @@ loadGIF();
 
 // this is a update
 
+DarkReader.enable();
