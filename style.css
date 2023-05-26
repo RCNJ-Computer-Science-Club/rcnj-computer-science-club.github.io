@@ -11,6 +11,12 @@
    scroll-snap-align: start;
 }
 
+@media only screen and (max-width: 767px) {
+    #home {
+       align-items: center;
+    }
+}
+
 
 
 
