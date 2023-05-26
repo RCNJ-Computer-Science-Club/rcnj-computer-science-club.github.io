@@ -29,14 +29,14 @@ function runEverySecond() {
   // DarkReader.enable();
 
   if (DarkReader.isEnabled()) {
-      clearInterval(interval); // Stop the interval timer
+      // clearInterval(interval); // Stop the interval timer
   }
     
 }
 
 // Start the interval timer
 loadGIF();
-let interval = setInterval(runEverySecond, 1);
+// let interval = setInterval(runEverySecond, 1);
 
 // this is a update
 
