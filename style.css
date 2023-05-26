@@ -1,8 +1,4 @@
-
-html {
-    color: white;
-}
-
-body {
-    background-color: blue;
+* {
+    scroll-snap-type: y mandatory;
+    border-color: #000 !important;
 }
