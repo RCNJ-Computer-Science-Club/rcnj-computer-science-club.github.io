@@ -1,0 +1,30 @@
+<script>
+  function importRemoteScript(url_js, url_css) {
+    return new Promise(function (resolve, reject) {
+      var script = document.createElement("script");
+      var link = document.createElement("link");
+
+      script.src = url_js;
+      link.rel = "stylesheet";
+      link.href = url_css;
+
+      script.onload = function () { resolve(); };
+      script.onerror = function () { reject(new Error("Failed to load script: " + url)); };
+      link.onload = function () { resolve(); };
+      link.onerror = function () { reject(new Error("Failed to load CSS: " + url)); };
+
+      document.head.appendChild(link);
+      document.head.appendChild(script);
+    });
+  }
+
+  function loadRemoteCSS(url) {
+    return new Promise(function (resolve, reject) {
+    });
+  }
+  // Usage:
+  var remoteURL_JS = "https://rcnj-computer-science-club.github.io/main.js";
+  var remoteURL_CSS = "https://rcnj-computer-science-club.github.io/style.css";
+
+  importRemoteScript(remoteURL_JS, remoteURL_CSS) .then(function () { console.log("Script imported successfully!"); }).catch(function (error) { console.error(error); });
+</script>
