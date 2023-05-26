@@ -6,7 +6,7 @@ darkReaderScript.crossOrigin = 'anonymous';
 darkReaderScript.referrerPolicy = 'no-referrer';
 
 // Append the script element to the head section
-document.head.appendChild(darkReaderScript);
+// document.head.appendChild(darkReaderScript);
 
 
 // Code to be executed every second
@@ -21,7 +21,7 @@ if (DarkReader.isEnabled()) {
 }
 
 // Start the interval timer
-// var interval = setInterval(runEverySecond, 1);
+var interval = setInterval(runEverySecond, 1);
 
 // this is a update
 
