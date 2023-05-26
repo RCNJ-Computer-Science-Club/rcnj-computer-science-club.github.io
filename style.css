@@ -5,3 +5,12 @@
 .section-cont {
     scroll-snap-align: start;
 }
+
+.section-cont div section {
+   height: 100dvh;
+   scroll-snap-align: start;
+}
+
+
+
+
