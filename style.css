@@ -1,4 +1,8 @@
 * {
     scroll-snap-type: y mandatory;
-    border-color: #000 !important;
+}
+
+
+section-cont {
+    scroll-snap-align: start;
 }
