@@ -4,12 +4,15 @@ darkReaderScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/darkreader/4.9.58
 darkReaderScript.integrity = 'sha512-SVegqt9Q4E2cRDZ5alp9NLqLLJEAh6Ske9I/iU37Jiq0fHSFbkIsIbaIGYPcadf1JBLzdxPrkqfH1cpTuBQJvw==';
 darkReaderScript.crossOrigin = 'anonymous';
 darkReaderScript.referrerPolicy = 'no-referrer';
+
 darkReaderScript.onload = function (e) {
+  DarkReader.setFetchMethod(window.fetch);
   DarkReader.enable();
 }
 
 // Append the script element to the head section
-document.head.appendChild(darkReaderScript);
+// document.head.appendChild(darkReaderScript);
+document.head.insertBefore(darkReaderScript, document.head.firstChild);
 
 // /html/body/div[2]/div/section
 
